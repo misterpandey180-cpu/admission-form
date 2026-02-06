@@ -1,0 +1,178 @@
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>स्किल सेंटर एडमिशन फॉर्म</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #9face6);
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            max-width: 800px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        .row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .submit-btn {
+            margin-top: 25px;
+            background: #2ecc71;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #27ae60;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>स्किल डेवलपमेंट सेंटर<br>एडमिशन फॉर्म</h1>
+
+    <label>कैंडिडेट का पूरा नाम</label>
+    <input type="text" placeholder="पूरा नाम लिखें">
+
+    <div class="row">
+        <div>
+            <label>पिता का नाम</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>माता का नाम</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>जन्म तिथि</label>
+            <input type="date">
+        </div>
+        <div>
+            <label>लिंग</label>
+            <select>
+                <option>चुनें</option>
+                <option>पुरुष</option>
+                <option>महिला</option>
+                <option>अन्य</option>
+            </select>
+        </div>
+    </div>
+
+    <label>मोबाइल नंबर</label>
+    <input type="tel" placeholder="10 अंकों का मोबाइल नंबर">
+
+    <label>ईमेल आईडी</label>
+    <input type="email" placeholder="example@gmail.com">
+
+    <label>पूरा पता</label>
+    <textarea rows="3"></textarea>
+
+    <div class="row">
+        <div>
+            <label>ज़िला</label>
+            <input type="text">
+        </div>
+        <div>
+            <label>राज्य</label>
+            <input type="text" value="झारखंड">
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>शैक्षणिक योग्यता</label>
+            <select>
+                <option>चुनें</option>
+                <option>5वीं पास</option>
+                <option>8वीं पास</option>
+                <option>10वीं पास</option>
+                <option>12वीं पास</option>
+                <option>ग्रेजुएशन</option>
+            </select>
+        </div>
+        <div>
+            <label>आधार नंबर</label>
+            <input type="text">
+        </div>
+    </div>
+
+    <label>कोर्स का नाम</label>
+    <select>
+        <option>चुनें</option>
+        <option>कंप्यूटर बेसिक</option>
+        <option>डाटा एंट्री ऑपरेटर</option>
+        <option>इलेक्ट्रीशियन</option>
+        <option>मोबाइल रिपेयरिंग</option>
+        <option>सिलाई प्रशिक्षण</option>
+    </select>
+
+    <div class="row">
+        <div>
+            <label>पासपोर्ट साइज फोटो</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>शैक्षणिक प्रमाण पत्र</label>
+            <input type="file">
+        </div>
+    </div>
+
+    <button class="submit-btn">फॉर्म सबमिट करें</button>
+
+    <p class="note">
+        नोट: सभी जानकारी सही-सही भरें। गलत जानकारी देने पर एडमिशन रद्द किया जा सकता है।
+    </p>
+</div>
+
+</body>
+</html>
